@@ -1,0 +1,13 @@
+.red-placeholder::placeholder{
+    color:red;
+}
+.green-placeholder::placeholder{
+    color:greenyellow;
+}
+.blue-placeholder::placeholder{
+    color:blue;
+
+}
+.purple-placeholder::placeholder{
+    color: mediumpurple;
+}

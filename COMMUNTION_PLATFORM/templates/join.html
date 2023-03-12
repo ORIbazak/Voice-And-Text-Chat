@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/CSS/rainbow.css">
+       <link rel="stylesheet" type="text/css" href="../static/CSS/join.css">
+    <link rel="stylesheet" type="text/css" href="../static/CSS/sharedDesigns.css">
+
+    <title>Join Page</title>
+</head>
+<body class ="gif">
+
+<link rel="stylesheet" type = "text/css" href="../static/CSS/chat.css"/>
+<h1 class="static-intro ">HELLO, Enter username and designated room ID</h1>
+<form action = "/chat">
+ <div id = "join-container">
+     <div id="input-container">
+     <input class ="user-placeholder" type ='text' placeholder="enter Your username Here" name = "username_From_Join" id = "USERNAME">
+     <input class = "user-placeholder" placeholder="enter your room ID here" type ='text'  name = "ROOM_ID" id = "ROOMID">
+     <button type = submit id ="SUBMIT" class = "SEND">SUBMIT</button>
+         </div>
+ </div>
+    </form>
+<form action = "/back">
+    <input type ='submit' class="leaveClass" value="" name = "back_f_join" >
+</form>
+
+</body>
+<script>document.getElementById("ROOMID").classList.add("enter-username");
+document.getElementById("USERNAME").classList.add("enter-username");
+//add classes for CSS</script>
+<script type = "text/javascript" src = "../static/JS/css_in_js.js"></script>
+
+</html>

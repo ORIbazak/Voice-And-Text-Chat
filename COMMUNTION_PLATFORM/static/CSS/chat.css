@@ -1,0 +1,214 @@
+.my-message {
+  background-color: #dcf8c6;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px #ccc;
+    display: block;
+  background-clip: padding-box;
+    width: 40%;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+    clear: both;
+}
+
+#chatroom_body{
+  background-image: url("/static/images/megaphone.jpg");
+  background-size: auto;
+}
+
+
+
+#roomId_static{
+    display: inline-block;
+    width: 20%;
+    vertical-align: center;
+}
+
+
+.bold{
+    font-weight: bolder;
+}
+#current-members{
+    position:absolute ;top:30% ;left:5%;max-width: 15%; overflow-y: scroll;overflow-x: hidden; word-wrap: break-word;
+}
+#id_sect_container{
+    position: relative;
+    margin-top: 5%;
+
+}
+
+#chatBox{
+    overflow-y: scroll;
+    position:absolute;
+height: 70%;
+top: 10%;
+margin-left: 30%;
+
+width: 40%;
+
+    flex-direction: column;
+    border: 3px solid black;
+
+}
+
+#copy_btn{
+    position: absolute;
+  bottom: 35%;
+  left: 17%;
+  display: inline-block;
+padding:4px;
+  font-size: 1em;
+  background-color: orange;
+    border-radius: 7%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#copy-btn:hover {
+  background-color: #3e8e41;
+}
+
+
+.remote-message{
+  background-color: #e3f2fd;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: -2px 2px #ccc;
+  position: relative;
+  float: right;
+  display: block;
+  width: 40%;
+    word-wrap: break-word;
+  background-clip: padding-box;
+margin-bottom: 5px;
+        clear: both;
+
+}
+
+#clear{
+  background-image: url("../images/trashcan.png");
+    background-size: cover;
+  background-color: transparent;
+  border: none;
+  width: 10%;
+  height: 30px;
+}
+.DeafenClass{
+    background-image: url("../images/headphones.png");
+
+    background-color: transparent;
+    border: none;
+    background-size: cover;
+    width: 5vh;
+    height: 30px;
+}
+.UnDeafenClass{
+    background-image: url("../images/no-headphone.png");
+    background-color:transparent;
+    border: none;
+    background-size: cover;
+    width: 5vh;
+    height: 30px;
+}
+.muteClass{
+    background-image: url("/static/images/red.png");
+    background-size: cover;
+    border: none;
+    width: 50px;
+    background-color: transparent;
+
+}
+
+#toggleMic{
+
+    height:24px;
+}
+
+#deafen{
+    width: 10%;
+}
+
+
+.unmuteClass
+{
+width: 50px;
+    background-image: url("/static/images/green.png");
+    background-size: cover;
+    border:none;
+    background-color: transparent;
+
+}
+#option-bar {
+    height: 10%;
+width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#option-container{
+    height: 5%;
+    width: 50%;
+    left:20%;
+    position: absolute;
+    bottom: 3%;
+
+}
+#messageBar{
+    width: 95%;
+}
+
+#send_btn{
+    background-size: cover;
+    height:22px ;
+    width: 10%;
+    background-image: url("/static/images/envelope1.png");
+}
+#option-bar button {
+
+    margin-left:3%;
+}
+
+#history-log{
+    font-weight: bold;
+    position: absolute;
+    top:12%;
+    left:73.5%;
+    overflow-x: hidden;overflow-y: scroll;
+    word-wrap: break-word;
+    max-width: 22%;
+
+
+}
+.host-action
+{
+    display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+#host-kick {
+  background-color: #ff5a5f;
+  color: #fff;
+}
+
+#host-kick:hover {
+  background-color: #f04247;
+}
+
+
+#host-mute {
+  background-color: #4ca1af;
+  color: #fff;
+}
+
+#host-mute {
+  background-color: #2c7a7b;
+}

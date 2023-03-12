@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Page</title>
+</head>
+<link rel="stylesheet" type="text/css" href="../static/CSS/rainbow.css">
+
+
+<link rel="stylesheet" type = "text/css" href="/static/CSS/create.css"/>
+<link rel="stylesheet" type = "text/css" href="/static/CSS/sharedDesigns.css"/>
+<body class ="gif">
+<h1 class="static-intro ">HELLO, Enter your username in order to create a room</h1>
+
+<form action = "/back">
+<div>
+    <input type = 'submit' value = "" name = "back_f_create" class="leaveClass">
+</div>
+</form>
+<form action = "/chat">
+ <div class ="create-container">
+     <input  style = "text-align: center" id ="create_bar" class = "user-placeholder" type ='text' name = "username_From_Create" placeholder="enter username here">
+     <button class = "SEND" type = submit id="submit_create_css">CREATE</button>
+ </div>
+    </form>
+
+</body>
+<script> document.getElementById("create_bar").classList.add("enter-username")
+//add class for CSS</script>
+
+<script type = "text/javascript" src = "../static/JS/css_in_js.js"></script><script>document.getElementById("create_bar").classList.add("enter-username")</script>
+</html>

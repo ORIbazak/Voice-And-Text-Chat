@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chat room</title>
+</head>
+
+<body style ="overflow: hidden" id="chatroom_body">
+<link rel="stylesheet" type = "text/css" href="../static/CSS/sharedDesigns.css"/>
+<link rel="stylesheet" type = "text/css" href="../static/CSS/chat.css"/>
+<div id = "id_sect_container">
+    <h2    id = "roomId_static"> Room ID:{{room}}</h2>
+
+<button  id = "copy_btn" >copy to clipboard</button>
+</div>
+
+
+<h2 id = "welcome_static" style="position:absolute;top:3%;" > Welcome To {{host_name}}'s Chat Room </h2>
+
+<div id = "history-log"> HISTORY-LOG </div>
+<div  class="bold" id = "current-members" >Current Members</div>
+    <div  class="message-static" id = "chatBox" ></div>
+
+
+
+
+
+<form id = "chat-input">
+    <div id = "option-container">
+<div id = "option-bar" class = "options" >
+
+<input type =text placeholder="Enter Message....."  id ="messageBar" >
+
+<button type="submit" id = "send_btn" > </button>
+<button class = "muteClass " id = "toggleMic"></button>
+<button class=" DeafenClass" id = "deafen" ></button>
+<button  id = "clear" onclick= "clear_chat()" value="Clear Chat"></button>
+
+
+    <button id = "host-mute" class ="host-action"></button>
+    <button id = "host-kick" class ='host-action'></button>
+
+</div>
+        </div>
+</form>
+
+<form>
+<div>
+    <input style="top: 0" type = 'submit' value="" id = "leave" class = "leaveClass">
+</div>
+
+</form>
+
+</body>
+
+
+
+<script>
+//constants and variables that will be used in the JS files
+    let home_url =""
+    let client ;
+    let host_permissions = false;
+    let muted = true;
+    let deafen = false;
+    const PORT = 5000;
+    let delay = 5000;
+    let users_lst = [];
+
+    const room_id = "{{room}}";
+    const user_name = "{{username}}";
+    const host_name = "{{host_name}}";
+    const IP_ADDR ="{{IP_addr}}";
+
+
+    //references of the buttons on the screen
+    const deafen_btn = document.getElementById("deafen");
+
+    const chat_box = document.getElementById('chatBox');
+
+    const toggle_btn = document.getElementById("toggleMic");
+    const leave_btn = document.getElementById("leave");
+
+</script>
+<script type="text/javascript"  src="https://cdn.socket.io/socket.io-3.0.5.js"></script>
+<script type="text/javascript" src="/static/JS/socket_dom_functions.js"></script>
+<script type = "text/javascript" src = "../static/JS/socketjs.js"></script>
+
+<script type="text/javascript" src="../static/JS/room.js"></script>
+
+<script type="text/javascript" src="../static/JS/css_in_js.js"></script>
+<script type="text/javascript"  src="../static/JS/AgoraRTC_N-4.16.0.js"></script>
+<script type="text/javascript" src ="../static/JS/host.js"></script>
+<script type = "text/javascript" src = "../static/JS/viginere.js"></script>
+<script type ="text/javascript" src = "../static/JS/audio.js" ></script>
+</html>

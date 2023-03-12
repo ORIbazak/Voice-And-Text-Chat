@@ -1,0 +1,51 @@
+.SEND {
+  background-color: #5C6BC0;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: cursive;
+    cursor: pointer;
+  display: inline-block;
+  margin: 20px;
+}
+.gif {
+  background-image: url('/static/images/chatgif.gif');
+  background-repeat: repeat;
+    background-size: 8%;
+  overflow: hidden;
+}
+.static-intro{
+    position: absolute;
+    margin: 0;
+background-color: black;
+    top:0%;
+    width:100%;
+    height: 15%;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: whitesmoke;
+  font-size: 32px;
+  font-family: Arial;
+}
+
+
+.leaveClass
+{
+        outline: none;
+    border: none;
+        background-image: url("/static/images/arrow_to_box-removebg-preview.png");
+        background-size: cover;
+    background-color: transparent;
+        position: absolute;
+        right: 10px;
+        width: 60px;
+        height: 55px;
+    top:17%;
+
+    }
+
