@@ -84,7 +84,8 @@ let load_members_to_DOM= function (data){
                 member = document.createElement('div');
                 member.id = item;
                 member.innerHTML = item;
-                member.classList.remove('bold')
+                member.style.fontWeight = "normal";
+
 
 
                 document.getElementById('current-members').appendChild(member);
